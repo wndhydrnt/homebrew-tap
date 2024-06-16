@@ -17,7 +17,7 @@ tap "wndhydrnt/saturn-bot"
 brew "<formula>"
 ```
 
-### Release
+## Release
 
 1. Update the formula:
    ```shell
