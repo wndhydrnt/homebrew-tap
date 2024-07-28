@@ -1,4 +1,4 @@
-# homebrew-saturn-bot
+# homebrew-tap
 
 A [Homebrew](https://brew.sh) tap for [saturn-bot](https://github.com/wndhydrnt/saturn-bot).
 
