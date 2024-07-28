@@ -6,14 +6,14 @@ A [Homebrew](https://brew.sh) tap for [saturn-bot](https://github.com/wndhydrnt/
 
 ### Install a formula
 
-`brew install wndhydrnt/saturn-bot/<formula>`
+`brew install wndhydrnt/tap/<formula>`
 
-Or `brew tap wndhydrnt/saturn-bot` and then `brew install <formula>`.
+Or `brew tap wndhydrnt/tap` and then `brew install <formula>`.
 
 Or, in a [`brew bundle`](https://github.com/Homebrew/homebrew-bundle) `Brewfile`:
 
 ```ruby
-tap "wndhydrnt/saturn-bot"
+tap "wndhydrnt/tap"
 brew "<formula>"
 ```
 
@@ -41,14 +41,14 @@ brew "<formula>"
 3. Create a symlink so `brew` can discover the formula:
    ```shell
    mkdir -p "$(brew --prefix)/Library/Taps/wndhydrnt"
-   ln -s "$(brew --prefix)/Library/Taps/wndhydrnt/homebrew-saturn-bot" "$(pwd)"
+   ln -s "$(brew --prefix)/Library/Taps/wndhydrnt/homebrew-tap" "$(pwd)"
    ```
 4. Install the formula:
    ```shell
-   brew install wndhydrnt/saturn-bot/saturn-bot
+   brew install wndhydrnt/tap/saturn-bot
    ```
 5. Make changes to [`Formula/saturn-bot.rb`](./Formula/saturn-bot.rb).
 6. Re-install the formula to verify the changes:
    ```shell
-   brew reinstall wndhydrnt/saturn-bot/saturn-bot
+   brew reinstall wndhydrnt/tap/saturn-bot
    ```
