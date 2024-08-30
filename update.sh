@@ -1,8 +1,13 @@
-#!/user/bin/env bash
+#!/usr/bin/env bash
 
-set -e
+set -euo pipefail
 
-version="$1"
+version=${1:""}
+if [[ -z "${version}" ]]; then
+  release_url="https://api.github.com/repos/wndhydrnt/saturn-bot/releases/latest"
+  version=$(curl -fsSL "${release_url}" | jq -r '.name')
+fi
+version=${version#"v"}
 
 archive_url="https://github.com/wndhydrnt/saturn-bot/archive/refs/tags/v${version}.tar.gz"
 sha256=$(curl -fsSL "${archive_url}" | sha256sum | cut -d ' ' -f 1)
