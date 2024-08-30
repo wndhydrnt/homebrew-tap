@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-version=${1:""}
+version=${1-""}
 if [[ -z "${version}" ]]; then
   release_url="https://api.github.com/repos/wndhydrnt/saturn-bot/releases/latest"
   version=$(curl -fsSL "${release_url}" | jq -r '.name')
