@@ -1,11 +1,11 @@
 class SaturnBot < Formula
   desc "Create, modify or delete files across many repositories in parallel."
   homepage "https://github.com/wndhydrnt/saturn-bot"
-  url "https://github.com/wndhydrnt/saturn-bot/archive/refs/tags/v0.11.1.tar.gz"
-  sha256 "fcb29b255e6cf01dadf8bc975c9b364e2dd1fb06a3587a6fb15cc30b1f763465"
+  url "https://github.com/wndhydrnt/saturn-bot/archive/refs/tags/v0.12.0.tar.gz"
+  sha256 "bd035dfd0d32a3ea62299ed9bab60a63101c5122650499a40bbafcb649661d8a"
   license "AGPL-3.0"
   head "https://github.com/wndhydrnt/saturn-bot.git", branch: "main"
-  version "0.11.1"
+  version "0.12.0"
 
   depends_on "go" => :build
 
