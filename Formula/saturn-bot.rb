@@ -16,6 +16,8 @@ class SaturnBot < Formula
     ENV["GOPATH"] = HOMEBREW_CACHE/"go_cache"
     system "make", "VERSION=v#{semver}", "VERSION_DATETIME=#{date_time}", "VERSION_HASH=", "build"
     bin.install "saturn-bot"
+    bash_completion.install "completion/saturn-bot.bash" => "saturn-bot"
+    zsh_completion.install "completion/saturn-bot.zsh" => "_saturn-bot"
   end
 
   test do
